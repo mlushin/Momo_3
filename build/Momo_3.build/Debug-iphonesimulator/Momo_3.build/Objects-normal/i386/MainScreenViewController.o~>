@@ -1,7 +1,0 @@
-/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m: In function '-[MainScreenViewController viewDidLoad]':
-/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m:337: warning: class 'MainScreenViewController' does not implement the 'UISearchBarDelegate' protocol
-/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m:341: warning: class 'MainScreenViewController' does not implement the 'UITableViewDelegate' protocol
-/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m:342: warning: class 'MainScreenViewController' does not implement the 'UITableViewDataSource' protocol
-/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m: At top level:
-/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m:554: warning: property 'xmlParser' requires method '-xmlParser' to be defined - use @synthesize, @dynamic or provide a method implementation
-/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m:554: warning: property 'xmlParser' requires the method 'setXmlParser:' to be defined - use @synthesize, @dynamic or provide a method implementation
