@@ -15,7 +15,13 @@
 		178398DA106B4C1100B4EE74 /* OptionsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178398D8106B4C1100B4EE74 /* OptionsScreenViewController.xib */; };
 		178598FD107C655A00C1D7D8 /* MerchantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178598FB107C655A00C1D7D8 /* MerchantViewController.m */; };
 		178598FE107C655A00C1D7D8 /* MerchantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178598FC107C655A00C1D7D8 /* MerchantViewController.xib */; };
+		179C64F710A15D5F0023DAC6 /* Frameworks in Frameworks */ = {isa = PBXBuildFile; fileRef = 179C649910A15D5F0023DAC6 /* Frameworks */; };
+		179C73F810A15E9D0023DAC6 /* MapKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 179C73F710A15E9D0023DAC6 /* MapKit */; };
+		17A378D0108EDA6900538AD9 /* SignInScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A378CE108EDA6900538AD9 /* SignInScreenViewController.m */; };
+		17A378D1108EDA6900538AD9 /* SignInScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A378CF108EDA6900538AD9 /* SignInScreenViewController.xib */; };
 		17ACB2B41069F7AB0008ACDE /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ACB2B31069F7AB0008ACDE /* MainScreenViewController.m */; };
+		17DC695410980E61004DF4B7 /* SettingsScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DC695210980E61004DF4B7 /* SettingsScreenViewController.m */; };
+		17DC695510980E61004DF4B7 /* SettingsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC695310980E61004DF4B7 /* SettingsScreenViewController.xib */; };
 		1D3623260D0F684500981E51 /* Momo_3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Momo_3AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -38,8 +44,16 @@
 		178598FA107C655A00C1D7D8 /* MerchantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantViewController.h; sourceTree = "<group>"; };
 		178598FB107C655A00C1D7D8 /* MerchantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantViewController.m; sourceTree = "<group>"; };
 		178598FC107C655A00C1D7D8 /* MerchantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MerchantViewController.xib; path = Classes/MerchantViewController.xib; sourceTree = "<group>"; };
+		179C649910A15D5F0023DAC6 /* Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Frameworks; path = /System/Library/Frameworks; sourceTree = "<absolute>"; };
+		179C73F710A15E9D0023DAC6 /* MapKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = MapKit; path = System/Library/Frameworks/MapKit.framework/MapKit; sourceTree = SDKROOT; };
+		17A378CD108EDA6900538AD9 /* SignInScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInScreenViewController.h; sourceTree = "<group>"; };
+		17A378CE108EDA6900538AD9 /* SignInScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInScreenViewController.m; sourceTree = "<group>"; };
+		17A378CF108EDA6900538AD9 /* SignInScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SignInScreenViewController.xib; path = Classes/SignInScreenViewController.xib; sourceTree = "<group>"; };
 		17ACB2B21069F7AB0008ACDE /* MainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenViewController.h; sourceTree = "<group>"; };
 		17ACB2B31069F7AB0008ACDE /* MainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewController.m; sourceTree = "<group>"; };
+		17DC695110980E61004DF4B7 /* SettingsScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsScreenViewController.h; sourceTree = "<group>"; };
+		17DC695210980E61004DF4B7 /* SettingsScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsScreenViewController.m; sourceTree = "<group>"; };
+		17DC695310980E61004DF4B7 /* SettingsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsScreenViewController.xib; path = Classes/SettingsScreenViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Momo_3AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Momo_3AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* Momo_3AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Momo_3AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +76,8 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+				179C64F710A15D5F0023DAC6 /* Frameworks in Frameworks */,
+				179C73F810A15E9D0023DAC6 /* MapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +101,10 @@
 				177EC001107EF75300C130DE /* DealScreenViewController.m */,
 				177EC01E107EF8E700C130DE /* DealDetailsScreenViewController.h */,
 				177EC01F107EF8E700C130DE /* DealDetailsScreenViewController.m */,
+				17A378CD108EDA6900538AD9 /* SignInScreenViewController.h */,
+				17A378CE108EDA6900538AD9 /* SignInScreenViewController.m */,
+				17DC695110980E61004DF4B7 /* SettingsScreenViewController.h */,
+				17DC695210980E61004DF4B7 /* SettingsScreenViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -122,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				178598FC107C655A00C1D7D8 /* MerchantViewController.xib */,
+				17DC695310980E61004DF4B7 /* SettingsScreenViewController.xib */,
+				17A378CF108EDA6900538AD9 /* SignInScreenViewController.xib */,
 				177EC020107EF8E700C130DE /* DealDetailsScreenViewController.xib */,
 				177EC002107EF75300C130DE /* DealScreenViewController.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
@@ -137,6 +159,8 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				179C649910A15D5F0023DAC6 /* Frameworks */,
+				179C73F710A15E9D0023DAC6 /* MapKit */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,6 +212,8 @@
 				178598FE107C655A00C1D7D8 /* MerchantViewController.xib in Resources */,
 				177EC004107EF75300C130DE /* DealScreenViewController.xib in Resources */,
 				177EC022107EF8E700C130DE /* DealDetailsScreenViewController.xib in Resources */,
+				17A378D1108EDA6900538AD9 /* SignInScreenViewController.xib in Resources */,
+				17DC695510980E61004DF4B7 /* SettingsScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +232,8 @@
 				178598FD107C655A00C1D7D8 /* MerchantViewController.m in Sources */,
 				177EC003107EF75300C130DE /* DealScreenViewController.m in Sources */,
 				177EC021107EF8E700C130DE /* DealDetailsScreenViewController.m in Sources */,
+				17A378D0108EDA6900538AD9 /* SignInScreenViewController.m in Sources */,
+				17DC695410980E61004DF4B7 /* SettingsScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +250,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Momo_3_Prefix.pch;
 				INFOPLIST_FILE = "Momo_3-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks/MapKit.framework\"",
+				);
 				PRODUCT_NAME = Momo_3;
 			};
 			name = Debug;
@@ -234,6 +266,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Momo_3_Prefix.pch;
 				INFOPLIST_FILE = "Momo_3-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks/MapKit.framework\"",
+				);
 				PRODUCT_NAME = Momo_3;
 			};
 			name = Release;

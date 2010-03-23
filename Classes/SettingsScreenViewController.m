@@ -1,18 +1,18 @@
 //
-//  DealDetailsScreenViewController.m
+//  SettingsScreenViewController.m
 //  Momo_3
 //
-//  Created by Mikhail Lushin on 10/8/09.
+//  Created by Mikhail Lushin on 10/27/09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "DealDetailsScreenViewController.h"
+#import "SettingsScreenViewController.h"
 #import "MainScreenViewController.h"
 
 
-@implementation DealDetailsScreenViewController
+@implementation SettingsScreenViewController
 
-@synthesize dealName, merchantName, description, mapView;
+@synthesize logOutButton; 
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -24,35 +24,12 @@
 }
 */
 
-
+/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.dealName setText:[[[CONTENT_STORAGE dealArray] objectAtIndex:[CONTENT_STORAGE currIndex]]	
-                            objectForKey:@"DealName"]];
-    [self.merchantName setText:[[[CONTENT_STORAGE dealArray] objectAtIndex:[CONTENT_STORAGE currIndex]]	
-                            objectForKey:@"Merchant"]];
-    [self.description setText:[[[CONTENT_STORAGE dealArray] objectAtIndex:[CONTENT_STORAGE currIndex]]	
-                            objectForKey:@"Description"]];
-    
-    
-    //mapView = [[MKMapView alloc] initWithFrame:CGRectMake( 5, 5, 310, 150)];
-    //[self.view addSubview:mapView];
-    
-    mapView.showsUserLocation = TRUE;
-    mapView.delegate = self;
-    
-    
-    MKCoordinateRegion region; 
-    region.center.latitude = 40.814849;
-    region.center.longitude = -73.622732;//mapView.userLocation.location.coordinate.longitude;
-    region.span.latitudeDelta = 0.2;
-    region.span.longitudeDelta = 0.2;
-    
-    [mapView setRegion:region animated:YES];
 }
-
+*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -61,6 +38,15 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
+
+- (IBAction)buttonPressed:(id)sender
+{
+    NSUserDefaults * login = [NSUserDefaults standardUserDefaults];
+    [login setObject:@"" forKey:@"Momo_username"];
+    [login setObject:@"" forKey:@"Momo_password"];
+ 
+    NSLog(@"Log out button pressed");
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

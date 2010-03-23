@@ -8,6 +8,7 @@
 
 #import "MainScreenViewController.h"
 #import "MerchantViewController.h"
+#import "SignInScreenViewController.h"
 
 
 @implementation MainScreenViewController
@@ -179,7 +180,10 @@ int connectionType;
 {
 	NSLog(@"Did end document");
 	if (self.currentState == MAIN_SCREEN_STATE_CONT_PARSE) {
-		[[self tableView] reloadData];
+        
+        [[CONTENT_STORAGE tableContents] addObjectsFromArray:[CONTENT_STORAGE dealArray]];
+        [activityIndicator stopAnimating];
+		[myTableView reloadData];
 	}
 	[self transitionMainScreenState:++self.currentState];
 }
@@ -188,7 +192,7 @@ int connectionType;
 {
 	NSLog(@"parsing %@ element", elementName);
 	currentElement = [elementName copy];
-	
+	[currentElementStr setString:@""];
 	if ([currentElement isEqualToString:@"Deal"]) {
 		if (currentDeal == nil) {
 			currentDeal = [[NSMutableDictionary alloc] init];
@@ -210,14 +214,9 @@ int connectionType;
 		if ([elementName isEqualToString:@"Deal"]) {
 			// Deal ended 
 			[[CONTENT_STORAGE dealArray] addObject:[currentDeal copy]];
-
-//			NSLog(@"Object added curr cnt %d %@", [dealArray count], [currentDeal objectForKey:@"DealName"]);
 		} else {
 			
 			[currentDeal setObject:[currentElementStr copy] forKey:[elementName copy]];
-			
-//			NSLog(@"setting %@ for %@", currentElementStr, elementName);
-			NSLog(@"*&*&*&*&*& %@  ", [currentDeal objectForKey:(NSString*)@"DealName"]);
 			[currentElementStr setString:@""];
 		}
 	}
@@ -277,7 +276,7 @@ int connectionType;
 
 	// content loading finished
 	NSString *responseStr = [[NSString alloc] initWithBytes:[rspData mutableBytes] length:[rspData length] encoding:NSUTF8StringEncoding];
-	NSLog(responseStr);
+	//NSLog(responseStr);
 	NSLog(@"-------------------------------------------------------");
 	[responseStr release];
 
@@ -296,22 +295,65 @@ int connectionType;
 		
 }
 
+- (void)loadSignInScreen {
+        
+    NSLog(@"Sign in screen loading");
+    SignInScreenViewController * viewController = [[SignInScreenViewController alloc] initWithNibName:@"SignInScreenViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+	[viewController release];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
 	NSLog(@"View did load");
 
+    // Initialize main screen state
 	self.currentState = MAIN_SCREEN_STATE_NONE;
 	
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // Determine if SignIn button needs to be displayed
+    NSUserDefaults * login = [NSUserDefaults standardUserDefaults];
+    
+    NSString * username = [login objectForKey:@"Momo_username"];
+    NSString * password = [login objectForKey:@"Momo_password"];
+    if ((username == nil) || ([username length] == 0) ||
+        (password == nil) || ([password length] == 0)) {
+        signInButton = [[UIBarButtonItem alloc] initWithTitle:@"Sign In" 
+                                                    style: UIBarButtonItemStyleBordered target:self action:@selector(loadSignInScreen)];
+        self.navigationItem.rightBarButtonItem = signInButton;
+    } else {
+        self.navigationItem.rightBarButtonItem = nil;
+        NSLog(@"%@ %@", username, password);
+    }
+    
 	
 	self.currentState++;
 	[self transitionMainScreenState:self.currentState];
     
-    searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,0,320,30)];
-    searchBar.delegate = self;
-    [self.view addSubview:searchBar];
+    //[self.tableView initWithStyle:CGRectMake(0, 31, 320, 400)];
+    
+    srchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,0,320,30)];
+    srchBar.delegate = self;
+    [self.view addSubview:srchBar];
+    
+    myTableView = [[UITableView alloc]initWithFrame:CGRectMake(0,31, 320, 400)];
+    myTableView.delegate = self;
+    myTableView.dataSource = self;
+    [self.view addSubview:myTableView];
+    
+    activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(50,50,50,50)];
+    activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    activityIndicator.hidesWhenStopped = YES;
+    [self.view addSubview:activityIndicator];
+    [activityIndicator startAnimating];
+    
+    
+    // Allocate table contents
+    if ([CONTENT_STORAGE tableContents] == nil) {
+        [CONTENT_STORAGE setTableContents:[[NSMutableArray alloc] init]];
+    }
+                                
 
     /*self.searchDisplayController = [[UISearchDisplayController alloc]
                         initWithSearchBar:searchBar contentsController:self];
@@ -324,11 +366,21 @@ int connectionType;
 
 
 
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 	
 	NSLog(@"View will appear");
+    NSUserDefaults * login = [NSUserDefaults standardUserDefaults];
+    NSString * username = [login objectForKey:@"Momo_username"];
+    NSString * password = [login objectForKey:@"Momo_password"];
+    if ((username == nil) || ([username length] == 0) ||
+         (password == nil) || ([password length] == 0)) {
+        signInButton = [[UIBarButtonItem alloc] initWithTitle:@"Sign In" 
+                                                        style: UIBarButtonItemStyleBordered target:self action:@selector(loadSignInScreen)];
+        self.navigationItem.rightBarButtonItem = signInButton;
+    } else {
+        self.navigationItem.rightBarButtonItem = nil;
+    }
 }
 
 /*
@@ -369,18 +421,18 @@ int connectionType;
 
 
 #pragma mark Table view methods
-
+/*-----------------------------------------------------*/
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-
+/*-----------------------------------------------------*/
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[CONTENT_STORAGE dealArray] count];
+    return [[CONTENT_STORAGE tableContents] count];
 }
 
-
+/*-----------------------------------------------------*/
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -391,16 +443,11 @@ int connectionType;
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-	[cell.textLabel setText: [[[CONTENT_STORAGE dealArray] objectAtIndex:INDEX_FROM_PATH(indexPath)] objectForKey:@"Category"]];
-	
-	
-    // Set up the cell..
-	//cell.textLabel.text = @"text here";
-	//[cell.textLabel setText:@"ny eb ti"];
+	[cell.textLabel setText: [[[CONTENT_STORAGE tableContents] objectAtIndex:INDEX_FROM_PATH(indexPath)] objectForKey:@"Category"]];
     return cell;
 }
 
-
+/*-----------------------------------------------------*/
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
 	[CONTENT_STORAGE setCurrIndex:INDEX_FROM_PATH(indexPath)];
@@ -460,12 +507,56 @@ int connectionType;
 }
 
 
+/*---------------------------------------------
+ 
+ SEARCH BAR IMPLEMENTATION
+ 
+ ----------------------------------------------*/
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+{
+    // When text begins editing, clear contents of the table
+    srchBar.showsCancelButton = YES;
+    [[CONTENT_STORAGE tableContents] removeAllObjects];
+        
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    // Now find the entries with givne text
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(Merchant beginswith %@)",searchText];
+    NSArray * array = [[CONTENT_STORAGE dealArray] filteredArrayUsingPredicate:predicate];
+    [[CONTENT_STORAGE tableContents] removeAllObjects];
+    [[CONTENT_STORAGE tableContents] addObjectsFromArray:array];
+    [myTableView reloadData];
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    // Resign First Responder
+    [searchBar resignFirstResponder];
+    
+    // Set table contents to deals array and reload data
+    [[CONTENT_STORAGE tableContents] removeAllObjects];
+    [[CONTENT_STORAGE tableContents] addObjectsFromArray:[CONTENT_STORAGE dealArray]];
+    [myTableView reloadData];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar resignFirstResponder];
+}
+
+
+
+
+
 @end
 
 
 
 @implementation ContentStorageClass
-@synthesize dealArray, currIndex;
+@synthesize dealArray, currIndex, tableContents;
 
 +(ContentStorageClass *)sharedInstance 
 {

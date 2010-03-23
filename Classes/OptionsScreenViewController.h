@@ -14,6 +14,12 @@
 
 }
 
+typedef enum {
+    OPTIONS_SCREEN_SELECTION_SETTINGS = 0,
+    OPTIONS_SCREEN_SELECTION_RECENTS,
+    OPTIONS_SCREEN_SELECTION_MAX
+} OPTIONS_SCREEN_SELECTION;
+
 @property (nonatomic, retain) UITableView * optionsTable;
 
 @end

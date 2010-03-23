@@ -70,12 +70,17 @@ typedef enum {
 #define CONTENT_STORAGE				[ContentStorageClass sharedInstance]
 #define INDEX_FROM_PATH(indexPath)  [indexPath indexAtPosition:[indexPath length] - 1]
 
-@interface MainScreenViewController : UITableViewController {
+@interface MainScreenViewController : UIViewController {
+    UITableView     * myTableView; 
+    UIActivityIndicatorView * activityIndicator; 
+    UIBarButtonItem         * signInButton; 
+    
 	NSMutableData   * rspData;
 	NSURLConnection * urlConnection;
 	NSXMLParser     * xmlParser; 
 
-    UISearchBar     * searchBar; 
+    UISearchBar     * srchBar; 
+   // UITableView     * tableView; 
 	
 	// Global vars
 	int        currentState;
@@ -100,10 +105,12 @@ typedef enum {
 @interface ContentStorageClass: NSObject {
 	NSMutableString		* srvVersion;
 	NSMutableArray		* dealArray;
+    NSMutableArray      * tableContents; 
 	int                   currIndex;
 	
 }
 @property (assign) NSMutableArray		* dealArray;
+@property (assign) NSMutableArray       * tableContents;
 @property (assign) int					  currIndex;
 + (ContentStorageClass *)sharedInstance;
 @end

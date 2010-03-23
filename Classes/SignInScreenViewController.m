@@ -1,18 +1,17 @@
 //
-//  DealDetailsScreenViewController.m
+//  SignInScreenViewController.m
 //  Momo_3
 //
-//  Created by Mikhail Lushin on 10/8/09.
+//  Created by Mikhail Lushin on 10/20/09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "DealDetailsScreenViewController.h"
-#import "MainScreenViewController.h"
+#import "SignInScreenViewController.h"
 
 
-@implementation DealDetailsScreenViewController
+@implementation SignInScreenViewController
 
-@synthesize dealName, merchantName, description, mapView;
+@synthesize usernameField, passwordField, signInButton;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -28,29 +27,10 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.dealName setText:[[[CONTENT_STORAGE dealArray] objectAtIndex:[CONTENT_STORAGE currIndex]]	
-                            objectForKey:@"DealName"]];
-    [self.merchantName setText:[[[CONTENT_STORAGE dealArray] objectAtIndex:[CONTENT_STORAGE currIndex]]	
-                            objectForKey:@"Merchant"]];
-    [self.description setText:[[[CONTENT_STORAGE dealArray] objectAtIndex:[CONTENT_STORAGE currIndex]]	
-                            objectForKey:@"Description"]];
-    
-    
-    //mapView = [[MKMapView alloc] initWithFrame:CGRectMake( 5, 5, 310, 150)];
-    //[self.view addSubview:mapView];
-    
-    mapView.showsUserLocation = TRUE;
-    mapView.delegate = self;
-    
-    
-    MKCoordinateRegion region; 
-    region.center.latitude = 40.814849;
-    region.center.longitude = -73.622732;//mapView.userLocation.location.coordinate.longitude;
-    region.span.latitudeDelta = 0.2;
-    region.span.longitudeDelta = 0.2;
-    
-    [mapView setRegion:region animated:YES];
+    usernameField.delegate = self;
+    passwordField.delegate = self;
+    passwordField.secureTextEntry = YES;
+
 }
 
 
@@ -79,5 +59,31 @@
     [super dealloc];
 }
 
+
+/*---------------------------------------------
+ 
+ UI TEXT FIELD IMPLEMENTATION
+ 
+ ----------------------------------------------*/
+ - (void)textFieldShouldReturn:(UITextField *)textField 
+{
+    
+    [textField resignFirstResponder];
+}
+
+
+- (IBAction)signInButtonPressed:(id)sender 
+{
+    if ([usernameField.text length] != 0 &&
+        [passwordField.text length] != 0)
+    {
+        NSUserDefaults * login = [NSUserDefaults standardUserDefaults];
+      
+        [login setObject:usernameField.text forKey:@"Momo_username"];
+        [login setObject:passwordField.text forKey:@"Momo_password"];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
 
 @end

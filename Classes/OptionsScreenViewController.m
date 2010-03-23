@@ -7,7 +7,8 @@
 //
 
 #import "OptionsScreenViewController.h"
-
+#import "MainScreenViewController.h"
+#import "SettingsScreenViewController.h"
 
 @implementation OptionsScreenViewController
 
@@ -82,7 +83,7 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return OPTIONS_SCREEN_SELECTION_MAX;
 }
 
 
@@ -97,16 +98,35 @@
     }
     
     // Set up the cell...
-	
+	switch (INDEX_FROM_PATH(indexPath)) {
+        case OPTIONS_SCREEN_SELECTION_SETTINGS:
+            [cell.textLabel setText: @"Settings"];
+            break;
+        case OPTIONS_SCREEN_SELECTION_RECENTS:
+            [cell.textLabel setText: @"Recents"];
+            break;
+        default:
+            [cell.textLabel setText: @"WTF"];
+    }
     return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController];
-	// [anotherViewController release];
+	
+    SettingsScreenViewController * viewCtrl;
+    
+    switch (INDEX_FROM_PATH(indexPath)) {
+        case OPTIONS_SCREEN_SELECTION_SETTINGS:
+            viewCtrl = [[SettingsScreenViewController alloc] initWithNibName:@"SettingsScreenViewController" 
+                                                           bundle:nil];
+            [self.navigationController pushViewController:viewCtrl animated:YES];
+            [viewCtrl release];
+            break;
+        default:
+            break;
+    }
 }
 
 
