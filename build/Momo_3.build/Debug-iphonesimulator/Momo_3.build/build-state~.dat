@@ -1,0 +1,285 @@
+TMomo_3
+v7
+r0
+t275380201.233611
+cCheck dependencies
+cProcessInfoPlistFile /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Info.plist Momo_3-Info.plist
+cCompileXIB /Users/mlushin/Documents/IPhoneApps/Momo_3/MainWindow.xib
+cCompileXIB /Users/mlushin/Documents/IPhoneApps/Momo_3/SecondView.xib
+cProcessPCH /var/folders/YS/YSqxFrV-E0aRHCDhe0r44k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Momo_3_Prefix-gyqrhovizwfheqggufamneqvykom/Momo_3_Prefix.pch.gch Momo_3_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/main.o /Users/mlushin/Documents/IPhoneApps/Momo_3/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/Momo_3AppDelegate.o /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/Momo_3AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/FirstViewController.o /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/MainScreenViewController.o /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_3 normal i386
+cGenerateDSYMFile /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app.dSYM /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_3
+cTouch /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk
+c000000004AB86FE000000000000000EE
+t1253601248
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004A821911000000000026EE30
+t1250040081
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004A765094000000000027E880
+t1249267860
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004A7650820000000000001355
+t1249267842
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004A7C6E970000000000000788
+t1249668759
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004A7C6F5900000000016721E0
+t1249668953
+s23536096
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/FirstViewController.h
+c000000004AB9BFDF00000000000000EB
+t1253687263
+s235
+i<UIKit/UIKit.h>
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/FirstViewController.m
+c000000004AB9BFDF00000000000005B0
+t1253687263
+s1456
+i"FirstViewController.h"
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.h
+c000000004AB9C02B00000000000000FA
+t1253687339
+s250
+i<UIKit/UIKit.h>
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m
+c000000004AB9C061000000000000109D
+t1253687393
+s4253
+i"MainScreenViewController.h"
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/Momo_3AppDelegate.h
+c000000004AB9BFDF00000000000001D8
+t1253687263
+s472
+i<UIKit/UIKit.h>
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/Momo_3AppDelegate.m
+c000000004AB9BFDF00000000000003B8
+t1253687263
+s952
+i"Momo_3AppDelegate.h"
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/MainWindow.xib
+c000000004AB9C03A0000000000006E3D
+t1253687354
+s28221
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/Momo_3_Prefix.pch
+c000000004AB9BFDF00000000000000B5
+t1253687263
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/SecondView.xib
+c000000004AB9BFDF00000000000022EE
+t1253687263
+s8942
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app
+t1253687401
+s238
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app.dSYM
+t1253687401
+s102
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Info.plist
+t1253687396
+s558
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/MainWindow.nib
+t1253687397
+s2093
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_3
+t1253687401
+s21308
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/PkgInfo
+t1253687396
+s8
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/SecondView.nib
+t1253687397
+s1709
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/FirstViewController.o
+t1253687400
+s29908
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/MainScreenViewController.o
+t1253687400
+s33268
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/Momo_3.LinkFileList
+c000000004AB9C0640000000000000220
+t1253687396
+s544
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/Momo_3AppDelegate.o
+t1253687400
+s40832
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/main.o
+t1253687400
+s5952
+
+N/Users/mlushin/Documents/IPhoneApps/Momo_3/main.m
+c000000004AB9BFDF0000000000000166
+t1253687263
+s358
+i<UIKit/UIKit.h>
+
+N/var/folders/YS/YSqxFrV-E0aRHCDhe0r44k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Momo_3_Prefix-gyqrhovizwfheqggufamneqvykom/Momo_3_Prefix.pch.gch
+t1253687399
+s13034960
+
+NMomo_3-Info.plist
+c000000004AB9BFDF000000000000038D
+t1253687263
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies275380196#275380196#0(0"0(0#1#0"4300882208#0"0#
+
+CCompileC build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/FirstViewController.o /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s275380200.518850
+e275380200.605885
+r1
+xCompileC
+xbuild/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/FirstViewController.o
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/FirstViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/FirstViewController.m275380200#275380200#0(0"0(0#0#72"/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/FirstViewController.m4300882208#1919"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-generated-files.hmap -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-own-target-headers.hmap -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-all-target-headers.hmap -iquote /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-project-headers.hmap -F/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/include -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/DerivedSources/i386 -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/DerivedSources -include /var/folders/YS/YSqxFrV-E0aRHCDhe0r44k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Momo_3_Prefix-gyqrhovizwfheqggufamneqvykom/Momo_3_Prefix.pch -c /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/FirstViewController.m -o /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/FirstViewController.o0#
+
+CCompileC build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/MainScreenViewController.o /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s275380200.606007
+e275380200.681327
+r1
+xCompileC
+xbuild/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/MainScreenViewController.o
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m275380200#275380200#0(0"0(0#0#77"/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m4300882208#1929"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-generated-files.hmap -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-own-target-headers.hmap -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-all-target-headers.hmap -iquote /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-project-headers.hmap -F/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/include -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/DerivedSources/i386 -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/DerivedSources -include /var/folders/YS/YSqxFrV-E0aRHCDhe0r44k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Momo_3_Prefix-gyqrhovizwfheqggufamneqvykom/Momo_3_Prefix.pch -c /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/MainScreenViewController.m -o /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/MainScreenViewController.o0#
+
+CCompileC build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/Momo_3AppDelegate.o /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/Momo_3AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s275380200.420345
+e275380200.518734
+r1
+xCompileC
+xbuild/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/Momo_3AppDelegate.o
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/Momo_3AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/Momo_3AppDelegate.m275380200#275380200#0(0"0(0#0#70"/Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/Momo_3AppDelegate.m4300882208#1915"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-generated-files.hmap -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-own-target-headers.hmap -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-all-target-headers.hmap -iquote /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-project-headers.hmap -F/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/include -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/DerivedSources/i386 -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/DerivedSources -include /var/folders/YS/YSqxFrV-E0aRHCDhe0r44k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Momo_3_Prefix-gyqrhovizwfheqggufamneqvykom/Momo_3_Prefix.pch -c /Users/mlushin/Documents/IPhoneApps/Momo_3/Classes/Momo_3AppDelegate.m -o /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/Momo_3AppDelegate.o0#
+
+CCompileC build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/main.o /Users/mlushin/Documents/IPhoneApps/Momo_3/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s275380199.309249
+e275380200.420238
+r1
+xCompileC
+xbuild/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/main.o
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/mlushin/Documents/IPhoneApps/Momo_3/main.m275380199#275380200#0(0"0(0#0#49"/Users/mlushin/Documents/IPhoneApps/Momo_3/main.m4300882208#1881"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-generated-files.hmap -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-own-target-headers.hmap -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-all-target-headers.hmap -iquote /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-project-headers.hmap -F/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/include -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/DerivedSources/i386 -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/DerivedSources -include /var/folders/YS/YSqxFrV-E0aRHCDhe0r44k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Momo_3_Prefix-gyqrhovizwfheqggufamneqvykom/Momo_3_Prefix.pch -c /Users/mlushin/Documents/IPhoneApps/Momo_3/main.m -o /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/mlushin/Documents/IPhoneApps/Momo_3/MainWindow.xib
+s275380196.794631
+e275380197.336510
+r1
+xCompileXIB
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib275380196#275380197#0(0"0(0#0#57"/Users/mlushin/Documents/IPhoneApps/Momo_3/MainWindow.xib4300882208#491"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/MainWindow.nib /Users/mlushin/Documents/IPhoneApps/Momo_3/MainWindow.xib0#
+
+CCompileXIB /Users/mlushin/Documents/IPhoneApps/Momo_3/SecondView.xib
+s275380196.795473
+e275380197.386908
+r1
+xCompileXIB
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/SecondView.xib
+lSLF07#2@25"CompileXIB SecondView.xib275380196#275380197#0(0"0(0#0#57"/Users/mlushin/Documents/IPhoneApps/Momo_3/SecondView.xib4300882208#491"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/SecondView.nib /Users/mlushin/Documents/IPhoneApps/Momo_3/SecondView.xib0#
+
+CGenerateDSYMFile /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app.dSYM /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_3
+s275380201.077070
+e275380201.202541
+r1
+xGenerateDSYMFile
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app.dSYM
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_3
+lSLF07#2@106"GenerateDSYMFile build/Debug-iphonesimulator/Momo_3.app.dSYM build/Debug-iphonesimulator/Momo_3.app/Momo_3275380201#275380201#0(0"0(0#0#88"/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_34300882208#392"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_3 -o /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app.dSYM0#
+
+CLd /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_3 normal i386
+s275380200.681429
+e275380201.076889
+r1
+xLd
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_3
+xnormal
+xi386
+lSLF07#2@93"Link /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_3275380200#275380201#0(0"0(0#0#0"4300882208#877"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -L/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator -F/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator -filelist /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Objects-normal/i386/Momo_3.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Momo_30#
+
+CProcessInfoPlistFile /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Info.plist Momo_3-Info.plist
+s275380196.716732
+e275380196.794521
+r1
+xProcessInfoPlistFile
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Info.plist
+xMomo_3-Info.plist
+lSLF07#2@25"Process Momo_3-Info.plist275380196#275380196#0(0"0(0#0#60"/Users/mlushin/Documents/IPhoneApps/Momo_3/Momo_3-Info.plist4300882208#488"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Momo_3-Info.plist -genpkginfo /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app/Info.plist0#
+
+CProcessPCH /var/folders/YS/YSqxFrV-E0aRHCDhe0r44k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Momo_3_Prefix-gyqrhovizwfheqggufamneqvykom/Momo_3_Prefix.pch.gch Momo_3_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s275380197.387045
+e275380199.309086
+r1
+xProcessPCH
+x/var/folders/YS/YSqxFrV-E0aRHCDhe0r44k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Momo_3_Prefix-gyqrhovizwfheqggufamneqvykom/Momo_3_Prefix.pch.gch
+xMomo_3_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile Momo_3_Prefix.pch275380197#275380199#0(0"0(0#0#60"/Users/mlushin/Documents/IPhoneApps/Momo_3/Momo_3_Prefix.pch4300882208#1770"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-generated-files.hmap -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-own-target-headers.hmap -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-all-target-headers.hmap -iquote /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/Momo_3-project-headers.hmap -F/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/include -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/DerivedSources/i386 -I/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Momo_3.build/Debug-iphonesimulator/Momo_3.build/DerivedSources -c /Users/mlushin/Documents/IPhoneApps/Momo_3/Momo_3_Prefix.pch -o /var/folders/YS/YSqxFrV-E0aRHCDhe0r44k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Momo_3_Prefix-gyqrhovizwfheqggufamneqvykom/Momo_3_Prefix.pch.gch0#
+
+CTouch /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app
+s275380201.202658
+e275380201.233561
+r1
+xTouch
+x/Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app
+lSLF07#2@87"Touch /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app275380201#275380201#0(0"0(0#0#0"4300882208#285"    cd /Users/mlushin/Documents/IPhoneApps/Momo_3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/mlushin/Documents/IPhoneApps/Momo_3/build/Debug-iphonesimulator/Momo_3.app0#
+
